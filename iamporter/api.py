@@ -1,4 +1,4 @@
-from .base import IamportResponse, BaseApi
+from .base import BaseApi
 
 
 class Certifications(BaseApi):
