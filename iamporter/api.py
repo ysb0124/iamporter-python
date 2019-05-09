@@ -14,7 +14,7 @@ class Cards(BaseApi):
 
 
 class Banks(BaseApi):
-    """결제기관에 대한 표준코드 및 기관정보(금융결제원기준) - 은"""
+    """결제기관에 대한 표준코드 및 기관정보(금융결제원기준) - 은행"""
 
     NAMESPACE = "banks"
 
