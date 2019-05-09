@@ -2,30 +2,50 @@ from .base import IamportResponse, BaseApi
 
 
 class Certifications(BaseApi):
+    """SMS본인인증결과 조회 및 관리"""
+
     NAMESPACE = "certifications"
 
 
 class Cards(BaseApi):
+    """결제기관에 대한 표준코드 및 기관정보(금융결제원기준) - 카드사"""
+
     NAMESPACE = "cards"
 
 
 class Banks(BaseApi):
+    """결제기관에 대한 표준코드 및 기관정보(금융결제원기준) - 은"""
+
     NAMESPACE = "banks"
 
 
 class Escrows(BaseApi):
+    """에스크로 결제건에 대한 배송정보 등록"""
+
     NAMESPACE = "escrows"
 
 
+class Kakao(BaseApi):
+    """카카오페이 전용 API"""
+
+    NAMESPACE = "kakao"
+
+
 class Naver(BaseApi):
+    """네이버페이 전용 API"""
+
     NAMESPACE = "naver"
 
 
 class Payco(BaseApi):
+    """PAYCO전용 API"""
+
     NAMESPACE = "payco"
 
 
 class Payments(BaseApi):
+    """결제내역 조회 및 결제 취소, 부가기"""
+
     NAMESPACE = "payments"
 
     def get_balance(self, imp_uid):
@@ -143,10 +163,14 @@ class Payments(BaseApi):
 
 
 class Receipts(BaseApi):
+    """현금영수증 발급/관리"""
+
     NAMESPACE = "receipts"
 
 
 class Subscribe(BaseApi):
+    """ActiveX없는 간편결제, 정기 예약 결제 기능 & 구매자 빌키 관"""
+
     NAMESPACE = "subscribe"
 
     def get_customers(self, customer_uid):
@@ -313,4 +337,6 @@ class Subscribe(BaseApi):
 
 
 class VBanks(BaseApi):
+    """PG결제화면없이 API만으로 가상계좌 발급/취소"""
+
     NAMESPACE = "vbanks"
